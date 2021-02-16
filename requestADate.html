@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendar una cita</title>
+    <style>
+        .purple-border textarea {
+    border: 1px solid #ba68c8;
+}
+.purple-border .form-control:focus {
+    border: 1px solid #ba68c8;
+    box-shadow: 0 0 0 0.2rem rgba(186, 104, 200, .25);
+}
+    </style>
+    <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/libs/css/style.css">
+    
+</head>
+<body>
+    <form style="width: 50%; margin:0px auto; margin-top: 5%;">
+        <div class="form-group">
+          <label for="txtNombre">Nombre del responsable</label>
+          <input type="text" class="form-control" id="txtNombre" aria-describedby="emailHelp">
+          <small id="nombreHelp" class="form-text text-muted">Recuerda proporcionar datos precisos</small>
+        </div>
+       
+        <div class="form-group">
+            <label for="txtNombre">Ubicación</label>
+            <input type="text" class="form-control" id="txtUbicación" aria-describedby="emailHelp">
+            <small id="UbicaciónHelp" class="form-text text-muted">Es necesario proporcionar un link de google maps</small>
+          </div>
+          <div class="custom-file form-group">
+            <input type="file" class="custom-file-input" id="customFileLang" lang="es">
+            <label class="custom-file-label" for="customFileLang">Seleccionar Archivo</label>
+          </div>
+          
+          <div class="form-group" style="margin-top: 25px;">
+            <select class="custom-select" id="inputGroupSelect02">
+              <option selected>Seleccione...</option>
+              <option value="1">LG 1</option>
+              <option value="2">LG 2</option>
+              <option value="3">LG 3</option>
+            </select>
+            <small id="nombreHelp" class="form-text text-muted">Elija el equipo para el mantenimiento </small>
+          </div>
+          <div class="form-group purple-border">
+            <label for="exampleFormControlTextarea4">Descripción del problema</label>
+            <textarea class="form-control" id="exampleFormControlTextarea4" rows="3"></textarea>
+          </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+      
+      <script src="assets/vendor/jquery/jquery-3.3.1.min.js"></script>
+      <script src="assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>
+</body>
+</html>
